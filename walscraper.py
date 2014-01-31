@@ -6,7 +6,7 @@ import random
 nogood=1
 x=0
 while nogood==1:
-	time.sleep(random.randint(3, 20))
+	time.sleep(random.randint(120, 420))
 	r = requests.get('http://goo.gl/GdxkKC')
 	soup=BeautifulSoup(r.text)
 	y = soup.find(id='shelfDiv').find(id="border")
@@ -21,6 +21,7 @@ while nogood==1:
 	old=f.read()
 	if new==old:
 		print "round:  " + str(x)
+		x+=1
 	else:
 		server = smtplib.SMTP("smtp.gmail.com", 587)
 		server.starttls()
