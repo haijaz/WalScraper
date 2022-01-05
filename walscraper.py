@@ -28,8 +28,8 @@ def main():
 		else:
 			server = smtplib.SMTP("smtp.gmail.com", 587)
 			server.starttls()
-			server.login('openhaijaz@gmail.com', 'ektelo9n')
-			server.sendmail("me!!", "7032258785@messaging.sprintpcs.com", bitly)
+			server.login('XXXXXXXXXXXXXXXXXXX@gmail.com', 'XXXXX')
+			server.sendmail("me!!", "XXXXXXXXXXXXX@messaging.sprintpcs.com", bitly)
 			print 'noooooooooo'
 			f.write(new)
 			nogood=0
